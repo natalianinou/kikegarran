@@ -1,0 +1,386 @@
+@font-face {
+    font-family: Seven;
+    src: url(/ChildsPlay\ AgeSeven\ Regular.otf);
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(/Helvetica\ Neue\ LT\ Pro\ 75\ Bold\ Outline.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Work Sans;
+    font-size: 14px;
+    line-height: 1.5;
+    background: #dfdfdf;
+    color: #000000;
+    width: 100vw;
+}
+
+
+h1 {
+
+    padding-left: 16px;
+    float: left;
+    font-family: 'Helvetica';
+    font-weight: 900;
+    color: #414042;
+    font-style: italic;
+    font-size: 42px;
+
+
+}
+
+
+
+header {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 120px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: auto;
+
+
+}
+
+nav li {
+    display: inline;
+    float: right;
+    list-style: none;
+    font-family: 'Work Sans';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px;
+
+}
+
+nav li a {
+    color: rgb(26, 26, 26);
+    text-decoration: wavy;
+    font-size: 16px;
+}
+
+nav li a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    cursor: pointer;
+    color: rgb(28, 28, 28);
+}
+
+.headerimg {
+
+
+    display: block;
+    margin-left: auto;
+    max-width: 50%;
+    margin-top: -10px;
+
+
+}
+
+.slideshow {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+.holder {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 10000vw;
+    height: 100vh;
+    transition: left 1s;
+}
+
+.holder div {
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 30px;
+}
+
+.slide-1 {
+    background-image: url(/images/hueso.png);
+}
+
+.slide-2 {
+    background-image: url(/images/monkey.png);
+}
+
+.slide-3 {
+    background-image: url(/images/niño.png);
+}
+
+.slide-4 {
+    background-image: url(/images/perro.jpeg);
+}
+
+.slide-5 {
+    background-image: url(/images/supeco.jpeg);
+}
+
+.slide-6 {
+    background-image: url(/images/cubo.png);
+}
+
+.slide-7 {
+    background-image: url(/images/barco.jpeg);
+}
+
+.slide-8 {
+    background-image: url(/images/niño.png);
+}
+
+.slide-9 {
+    background-image: url(/images/monkey.png);
+}
+
+.slide-10 {
+    background-image: url(/images/hueso.png);
+}
+
+.slide-11 {
+    background-image: url(/images/perro.jpeg);
+}
+
+.slide-12 {
+    background-image: url(/images/supeco.jpeg);
+}
+
+.slide-13 {
+    background-image: url(/images/niño.png);
+}
+
+.slide-14 {
+    background-image: url(/images/monkey.png);
+}
+
+.obscure {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+
+header {
+    top: 0;
+    overflow: hidden;
+    background-color: #dfdfdf;
+    padding: 20px 10px 25px 10px;
+
+}
+
+
+section.bios {
+    overflow: hidden;
+    background-color: #cccccc;
+    background-image: url(background_2.jpg);
+    background-size: cover;
+    width: 100vw;
+    margin: 0 auto;
+
+
+}
+
+section.bios div {
+    float: left;
+    width: 48%;
+    text-align: left;
+    padding: 30px 30px 60px 20px;
+
+}
+
+section.bios h2 {
+    font-size: 21px;
+    margin: 10px 0px 0px 0px;
+
+}
+
+section.bios p {
+    font-size: 18px;
+
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    padding: 10px 10px 11px 10px;
+    background-color: #6cbce9;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    color: white;
+    font-size: 1.4em;
+
+}
+
+svg {
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+@media (max-width: 1200px) {
+
+    .slideshow,
+    .holder,
+    .holder div {
+        height: 550px;
+    }
+
+    nav li {
+        font-size: 42px;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 10px 5px 10px 5px;
+    }
+
+    .slideshow,
+    .holder,
+    .holder div {
+        height: 400px;
+    }
+
+
+}
+
+@media (max-width: 660px) {
+
+    .slideshow,
+    .holder,
+    .holder div {
+        height: 350px;
+    }
+
+    nav li {
+        font-size: 28px;
+    }
+
+    header {
+        padding: 5px 5px 10px 5px;
+    }
+
+    section.bios {
+        padding-top: 30px;
+    }
+
+    section.bios div {
+        width: 100vw;
+        padding: 0px 20px 0px 20px;
+    }
+
+    section.bios div.cv {
+        padding: 0 20px 50px 20px;
+    }
+
+
+
+}
+
+@media (max-width:500px) {
+
+    .slideshow,
+    .holder,
+    .holder div {
+        height: 250px;
+    }
+
+    nav li {
+        font-size: 20px;
+    }
+
+
+
+}
+
+@media (max-width: 330px) {
+
+    .slideshow,
+    .holder,
+    .holder div {
+        height: 150px;
+    }
+
+    header {
+        padding: 2px 5px 10px 5px;
+    }
+
+    section.bios h2 {
+        font-size: 18px;
+    }
+
+    section.bios p {
+        font-size: 18px;
+    }
+
+    nav li {
+        font-size: 26px;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 62px;
+        top: 50%;
+
+
+
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    h1 {
+        font-size: 82px;
+        top: 50%;
+
+    }
+
+    nav ul {
+        margin-top: 30px;
+
+    }
+
+    nav li a {
+        font-size: 24px;
+        padding-right: 16px;
+
+    }
+
+}
